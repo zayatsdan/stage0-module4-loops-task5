@@ -10,15 +10,21 @@ public class Hourglass {
                 for(int eight=counterClock;eight>0;eight--){
                     System.out.print(8);
                 }
+            for( int empty1=height-counterClock; empty1>0;empty1--,empty1--){
+                System.out.print(" ");
+            }
             System.out.println();
+            if((counterY+1==height/2)&&(height%2==0)){
 
-                if(counterY<height/2){
+            }
+            else if(counterY<height/2){
                     counterClock--;
                     counterClock--;
-                }else {
+                }else if((counterY>=height/2)) {
                     counterClock++;
                     counterClock++;
                 }
+
         }
 
     }
